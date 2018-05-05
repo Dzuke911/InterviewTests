@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<input id="AjaxHiddenPath" type="hidden" value="@ViewData["AjaxHiddenPath"]"/>
+
+<div class="col-sm-12">
+    <div class="col-sm-8 form-group">
+        <div class="row">
+            <div class="col-sm-6">
+                <label>Enter question:</label>
+                <textarea class="form-control" rows="5" id="QuestionInput"></textarea>
+            </div>
+            <div class="col-sm-6">
+                <label>Enter answer:</label>
+                <textarea class="form-control" rows="5" id="AnswerInput"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <br />
+            <button id="AddQuestionButton" class="btn btn-success">AddQuestion</button>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/Index.js"></script>
+}
